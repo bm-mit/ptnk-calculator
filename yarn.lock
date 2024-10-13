@@ -1478,25 +1478,6 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@chakra-ui/storybook-addon@npm:^5.2.5":
-  version: 5.2.5
-  resolution: "@chakra-ui/storybook-addon@npm:5.2.5"
-  peerDependencies:
-    "@chakra-ui/react": ">=2.0.0"
-    "@storybook/components": ">=7.0.12"
-    "@storybook/manager-api": ">=7.0.12"
-    "@storybook/preview-api": ">=7.0.12"
-    "@storybook/types": ">=7.0.24"
-    react: ">=16.8.x"
-  peerDependenciesMeta:
-    react:
-      optional: true
-    react-dom:
-      optional: true
-  checksum: 10c0/8859195fe492f0086130e53ef1efee0513b1d23f660ea27fed17ea22984fa1868acec82425e3b957f5633adb02ecd1b616321eacad072049a493ecf21e4de0bc
-  languageName: node
-  linkType: hard
-
 "@chromatic-com/storybook@npm:^1.9.0":
   version: 1.9.0
   resolution: "@chromatic-com/storybook@npm:1.9.0"
@@ -9137,7 +9118,6 @@ __metadata:
   version: 0.0.0-use.local
   resolution: "ptnk-calculator@workspace:."
   dependencies:
-    "@chakra-ui/storybook-addon": "npm:^5.2.5"
     "@chromatic-com/storybook": "npm:^1.9.0"
     "@storybook/addon-essentials": "npm:^8.3.5"
     "@storybook/addon-interactions": "npm:^8.3.5"
