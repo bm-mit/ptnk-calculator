@@ -1,15 +1,46 @@
-import { db } from '@/db';
+import Dexie from 'dexie';
 
-export const notesService = {
+import { Database } from '@/db';
+
+import { NoteCellsService } from './note-cells.service';
+
+export class NotesService {
+  constructor(
+    private db: Database,
+    private noteCellsService: NoteCellsService,
+  ) {}
+
   async createNote(title: string) {
-    return db.notes.add({ title });
-  },
+    return this.db.notes.add({ title });
+  }
 
   async getNotes() {
-    return db.notes.toArray();
-  },
+    return this.db.notes.toArray();
+  }
 
   async getNoteById(id: number) {
-    return db.notes.get(id);
-  },
-};
+    return this.db.notes.get(id);
+  }
+
+  async updateNoteTitle(id: number, title: string) {
+    return this.db.notes.update(id, { title });
+  }
+
+  async deleteNoteById(id: number) {
+    return this.db.notes.delete(id);
+  }
+
+  async addTagToNoteById(noteId: number, tag: string) {
+    const note = await this.db.notes.get(noteId);
+    if (!note) {
+      throw new Dexie.NotFoundError('Note not found');
+    }
+
+    if (!note.tags) {
+      note.tags = [];
+    }
+
+    note.tags.push(tag);
+    return this.db.notes.update(noteId, { tags: note.tags });
+  }
+}
