@@ -53,6 +53,16 @@
         "functions": "defaultArguments"
       }
     ],
+    "import/no-extraneous-dependencies": [
+      "error",
+      {
+        "devDependencies": [
+          "**/*.stories.*",
+          "**/.storybook/**/*.*"
+        ],
+        "peerDependencies": true
+      }
+    ],
     "react/function-component-definition": [
       "error",
       {
