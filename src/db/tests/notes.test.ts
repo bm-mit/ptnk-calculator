@@ -1,7 +1,6 @@
 import 'fake-indexeddb/auto';
 
-import { expect } from '@jest/globals';
-import { beforeEach, describe, it } from 'jest-circus';
+import { beforeEach, describe, expect, it } from '@jest/globals';
 
 import { NoteDocumentEntity } from '@/db/entities/note-document.entity';
 

@@ -1444,7 +1444,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@babel/preset-typescript@npm:^7.24.1":
+"@babel/preset-typescript@npm:^7.24.1, @babel/preset-typescript@npm:^7.25.7":
   version: 7.25.7
   resolution: "@babel/preset-typescript@npm:7.25.7"
   dependencies:
@@ -10461,7 +10461,9 @@ __metadata:
   version: 0.0.0-use.local
   resolution: "ptnk-calculator@workspace:."
   dependencies:
+    "@babel/preset-typescript": "npm:^7.25.7"
     "@chromatic-com/storybook": "npm:^1.9.0"
+    "@jest/globals": "npm:^29.7.0"
     "@radix-ui/react-slot": "npm:^1.1.0"
     "@storybook/addon-essentials": "npm:^8.3.5"
     "@storybook/addon-interactions": "npm:^8.3.5"
@@ -10498,7 +10500,6 @@ __metadata:
     fake-indexeddb: "npm:^6.0.0"
     framer-motion: "npm:^11.11.7"
     jest: "npm:^29.7.0"
-    jest-circus: "npm:^29.7.0"
     lucide-react: "npm:^0.452.0"
     next: "npm:14.2.14"
     postcss: "npm:^8"
