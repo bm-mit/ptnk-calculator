@@ -19,6 +19,14 @@
     "project": "./tsconfig.json"
   },
   "parser": "@typescript-eslint/parser",
+  "overrides": [
+    {
+      "files": ["tests/**/*"],
+      "env": {
+        "jest": true
+      }
+    }
+  ],
   "settings": {
     "tailwindcss": {
       "callees": [
