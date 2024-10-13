@@ -29,7 +29,6 @@
     "tailwindcss-animate": "^1.0.7"
   },
   "devDependencies": {
-    "@chakra-ui/storybook-addon": "^5.2.5",
     "@chromatic-com/storybook": "^1.9.0",
     "@storybook/addon-essentials": "^8.3.5",
     "@storybook/addon-interactions": "^8.3.5",
