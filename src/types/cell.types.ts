@@ -1,4 +1,4 @@
 export enum CellType {
-  Markdown,
-  LaTeX,
+  Markdown = 'markdown',
+  LaTeX = 'latex',
 }

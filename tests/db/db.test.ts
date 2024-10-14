@@ -1,3 +1,5 @@
+import 'fake-indexeddb/auto';
+
 import { describe, expect, it } from '@jest/globals';
 
 describe('IndexedDB Connection', () => {

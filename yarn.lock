@@ -4063,6 +4063,13 @@ __metadata:
   languageName: node
   linkType: hard
 
+"ace-builds@npm:^1.32.8, ace-builds@npm:^1.36.2":
+  version: 1.36.2
+  resolution: "ace-builds@npm:1.36.2"
+  checksum: 10c0/86b4e6d5f7342418e3c9d66d817c6bd3e23f3925392a5098b0b15e6c3189ad163b5e177e1729ca15744cb0772b8333780deea7a42d1a6c88010ef8b97bad90ce
+  languageName: node
+  linkType: hard
+
 "acorn-import-attributes@npm:^1.9.5":
   version: 1.9.5
   resolution: "acorn-import-attributes@npm:1.9.5"
@@ -5818,6 +5825,13 @@ __metadata:
   version: 1.2.2
   resolution: "didyoumean@npm:1.2.2"
   checksum: 10c0/95d0b53d23b851aacff56dfadb7ecfedce49da4232233baecfeecb7710248c4aa03f0aa8995062f0acafaf925adf8536bd7044a2e68316fd7d411477599bc27b
+  languageName: node
+  linkType: hard
+
+"diff-match-patch@npm:^1.0.5":
+  version: 1.0.5
+  resolution: "diff-match-patch@npm:1.0.5"
+  checksum: 10c0/142b6fad627b9ef309d11bd935e82b84c814165a02500f046e2773f4ea894d10ed3017ac20454900d79d4a0322079f5b713cf0986aaf15fce0ec4a2479980c86
   languageName: node
   linkType: hard
 
@@ -9132,6 +9146,20 @@ __metadata:
   languageName: node
   linkType: hard
 
+"lodash.get@npm:^4.4.2":
+  version: 4.4.2
+  resolution: "lodash.get@npm:4.4.2"
+  checksum: 10c0/48f40d471a1654397ed41685495acb31498d5ed696185ac8973daef424a749ca0c7871bf7b665d5c14f5cc479394479e0307e781f61d5573831769593411be6e
+  languageName: node
+  linkType: hard
+
+"lodash.isequal@npm:^4.5.0":
+  version: 4.5.0
+  resolution: "lodash.isequal@npm:4.5.0"
+  checksum: 10c0/dfdb2356db19631a4b445d5f37868a095e2402292d59539a987f134a8778c62a2810c2452d11ae9e6dcac71fc9de40a6fedcb20e2952a15b431ad8b29e50e28f
+  languageName: node
+  linkType: hard
+
 "lodash.merge@npm:^4.6.2":
   version: 4.6.2
   resolution: "lodash.merge@npm:4.6.2"
@@ -10574,6 +10602,7 @@ __metadata:
     "@types/react-dom": "npm:^18"
     "@typescript-eslint/eslint-plugin": "npm:^7.0.0"
     "@typescript-eslint/parser": "npm:^7.0.0"
+    ace-builds: "npm:^1.36.2"
     babel-plugin-module-resolver: "npm:^5.0.2"
     class-variance-authority: "npm:^0.7.0"
     clsx: "npm:^2.1.1"
@@ -10600,7 +10629,9 @@ __metadata:
     postcss: "npm:^8"
     prettier: "npm:^3.3.3"
     react: "npm:^18"
+    react-ace: "npm:^12.0.0"
     react-dom: "npm:^18"
+    react-icons: "npm:^5.3.0"
     storybook: "npm:^8.3.5"
     tailwind-merge: "npm:^2.5.3"
     tailwindcss: "npm:^3.4.1"
@@ -10714,6 +10745,22 @@ __metadata:
   languageName: node
   linkType: hard
 
+"react-ace@npm:^12.0.0":
+  version: 12.0.0
+  resolution: "react-ace@npm:12.0.0"
+  dependencies:
+    ace-builds: "npm:^1.32.8"
+    diff-match-patch: "npm:^1.0.5"
+    lodash.get: "npm:^4.4.2"
+    lodash.isequal: "npm:^4.5.0"
+    prop-types: "npm:^15.8.1"
+  peerDependencies:
+    react: ^0.13.0 || ^0.14.0 || ^15.0.1 || ^16.0.0 || ^17.0.0 || ^18.0.0
+    react-dom: ^0.13.0 || ^0.14.0 || ^15.0.1 || ^16.0.0 || ^17.0.0 || ^18.0.0
+  checksum: 10c0/e7f33d4f0910f482e939f321db8f5a8bb7fe0bf40a9db0cde12ed2b368e8c77fc2683b2fb0737cd88216f732258e363705f2c6cfbbcaabced3fba8eff7fb43ad
+  languageName: node
+  linkType: hard
+
 "react-colorful@npm:^5.1.2":
   version: 5.6.1
   resolution: "react-colorful@npm:5.6.1"
@@ -10785,6 +10832,15 @@ __metadata:
     react: ^0.14.8 || ^15.0.1 || ^16.0.0 || ^17.0.1 || ^18.0.0
     react-dom: ^0.14.8 || ^15.0.1 || ^16.0.0 || ^17.0.1 || ^18.0.0
   checksum: 10c0/0d60a0ea758529c32a706d0c69d70b69fb94de3c46442fffdee34f08f51ffceddbb5395b41dfd1565895653e9f60f98ca525835be9d5db1f16d6b22be12f4cd4
+  languageName: node
+  linkType: hard
+
+"react-icons@npm:^5.3.0":
+  version: 5.3.0
+  resolution: "react-icons@npm:5.3.0"
+  peerDependencies:
+    react: "*"
+  checksum: 10c0/a53af0de558f0e2bacfbafc973aa8ca1e6a429006a2f83d70becad5be431726a691e096336c95949bb0d967587b145264c5046d2bc1518969dbae731855d0712
   languageName: node
   linkType: hard
 
