@@ -1,23 +1,27 @@
 import { Database } from '@/db';
-import { NotesService } from '@/db/services/notes.service';
+import { NoteEntity } from '@/db/entities/note.entity';
 import { CellType } from '@/types/cell.types';
 
 export class NoteCellsService {
   constructor(private db: Database) {}
 
-  private async createNoteCell(cellType: CellType) {
+  async create(cellType: CellType) {
     return this.db.noteCells.add({ cellType, content: '' });
   }
 
-  async getNoteCellById(id: number) {
+  async getById(id: number) {
     return this.db.noteCells.get(id);
   }
 
-  async updateNoteCellContent(id: number, content: string) {
+  async getAllByNote(note: NoteEntity) {
+    return Promise.all(note.cellIds.map((id) => this.getById(id)));
+  }
+
+  async updateContent(id: number, content: string) {
     return this.db.noteCells.update(id, { content });
   }
 
-  async changeNoteCellType(id: number, cellType: CellType) {
+  async updateCellType(id: number, cellType: CellType) {
     return this.db.noteCells.update(id, { cellType });
   }
 }

@@ -4,5 +4,5 @@ export interface NoteEntity extends BaseEntity {
   title: string;
   tags?: string[];
 
-  cellIds?: number[];
+  cellIds: number[];
 }
